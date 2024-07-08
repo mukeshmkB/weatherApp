@@ -1,0 +1,128 @@
+/* Container for current weather information with flexbox layout and styling */
+  .current-weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e4effffc;
+    border: 3px solid rgb(186, 217, 253);
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 15px;
+  }
+
+  /* Responsive styling for smaller screens */
+  @media screen and (min-width:768px) {
+    .current-weather-info {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        padding-left: 35px;
+        padding-right: 35px;
+      }
+  }
+  
+  /* Main content area with flexbox layout */
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6px;
+  }
+  
+  /* Responsive styling for larger screens */
+  @media screen and (min-width:768px) {
+    .main-content {
+      align-items: flex-start;
+    }
+  }
+  
+  /* Styling for the city name text */
+  .city-name {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0px 0px 6px 0px;
+  }
+  
+  /* Adjusted styling for larger screens */
+  @media screen and (min-width:768px) {
+    .city-name {
+      font-size: 26px;
+      margin-top: 0px;
+      margin-bottom: 4px;
+    }
+  }
+  
+  /* Styling for the current temperature, hidden by default */
+  .current-temp {
+    display: none;
+    font-size: 34px;
+    font-weight: bold;
+    margin: 0px;
+  }
+  
+  /* Display and adjust styling for larger screens */
+  @media screen and (min-width:768px) {
+    .current-temp {
+      display: block;
+      font-size: 54px;
+      font-weight: bold;
+    }
+  }
+  
+  /* Styling for the weather description text */
+  .weather-description {
+    font-size: 17px;
+    font-weight: 530;
+    text-transform: capitalize;
+    color: rgb(129, 129, 130);
+    margin-top: 2px;
+  }
+  
+  /* Container for weather icons with flexbox layout */
+  .weather-icon-container {
+    display: flex;
+    flex-direction: row;
+    order: -1;
+  }
+  
+  /* Adjust order for larger screens */
+  @media screen and (min-width:768px) {
+    .weather-icon-container {
+      order: 1;
+    }
+  }
+  
+  /* Styling for temperature icon */
+  .icon-temp {
+    display: block;
+    font-size: 26px;
+    margin-left: 15px;
+    color: #474747;
+  }
+  
+  /* Hide temperature icon on larger screens */
+  @media screen and (min-width:768px) {
+    .icon-temp {
+      display: none;
+    }
+  }
+  
+  /* Styling for weather images */
+  .current-weather-info img {
+    width: 100px;
+    margin-right: 85px;
+    margin: auto;
+  }
+  
+  /* Adjust image styling for larger screens */
+  @media screen and (min-width:768px) {
+    .weather-description {
+         font-size: 22px;
+    }
+
+    .current-weather-info img {
+      width: 160px;
+    }
+  }
+  

@@ -1,0 +1,114 @@
+/* Forecast section container with top margin */
+.forecast-section {
+    margin-top: 30px;
+ }
+ 
+ /* Styling for h1 element in forecast section */
+ .forecast-section h1 {
+     font-size: 20px;
+     color: #322f2f;
+ }
+ 
+ /* Adjust h1 font size for larger screens */
+ @media screen and (min-width:768px) {
+     .forecast-section h1 {
+         font-size: 26px;
+     }
+ }
+ 
+ /* Container for forecast card items with flexbox layout */
+ .fc-card-items {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     flex-wrap: wrap;
+     list-style-type: none;
+     margin-top: 20px;
+     padding-left: 0px;
+ }
+ 
+ /* Adjust layout to row direction for larger screens */
+ @media screen and (min-width:768px) {
+      .fc-card-items {
+          flex-direction: row;
+      }
+ }
+ 
+ /* Styling for individual forecast cards */
+ .forecast-card {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     width: 200px;
+     padding: 15px;
+     background-color: #fcfcfc;
+     border: 3px solid rgb(236, 234, 234);
+     border-radius: 8px;
+     margin-bottom: 20px;
+ }
+ 
+ /* Adjust forecast card width and margin for larger screens */
+ @media screen and (min-width:768px) {
+      .forecast-card {
+         max-width: 150px;
+         margin-right: 20px;
+      }
+ }
+ 
+ /* Styling for day text in forecast card */
+ .day {
+    font-size: 18px;
+    font-weight: bold;
+    color: #292828;
+    margin: 0px;
+ }
+ 
+
+ /* Styling for image in forecast card */
+ .forecast-card img{
+     width: 110px;
+     align-self: center;
+ }
+
+ /* Center alignment for paragraph in forecast card */
+ .forecast-card p {
+    align-self: center;
+ }
+ 
+ /* Right alignment for temperature container */
+ .temp-container {
+     align-self: flex-end;
+ }
+ 
+ /* Styling for high temperature text */
+ .temp-container .high-temp {
+     font-size: 16px;
+     font-weight: 550;
+     color: #292828;
+     margin-top: 0px;
+     margin-bottom: 5px;
+ }
+ 
+ /* Adjust high temperature font size for larger screens */
+ @media screen and (min-width:768px) {
+     .temp-container .high-temp {
+          font-size: 17px;
+     }
+ }
+ 
+ /* Styling for low temperature text */
+ .temp-container .low-temp {
+     font-size: 16px;
+     font-weight: 550;
+     color: #888889;
+     margin-top: 0px;
+     margin-bottom: 5px;
+ }
+ 
+ /* Adjust low temperature font size for larger screens */
+ @media screen and (min-width:768px) {
+     .temp-container .low-temp {
+          font-size: 17px;
+     }
+ }
+ 
